@@ -13,13 +13,16 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
+  background-image: linear-gradient(45deg, limegreen 25%, white 25%, white 50%, limegreen 50%, limegreen 75%, white 75%, white);
+  background-size: 56px 56px;
+  animation: branchLines 10s linear infinite;
 }
 
 header {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
-  background-color: #1a237e;
+  background-color: limegreen; /* Updated to school color */
   color: white;
   border-radius: 5px;
 }
@@ -197,4 +200,14 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Add animation for Git-style branch lines */
+@keyframes branchLines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
